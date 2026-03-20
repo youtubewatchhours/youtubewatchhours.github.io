@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-[#0A0A0A] text-white font-sans selection:bg-[#FFD700] selection:text-black overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .shadow-yellow-heavy {
+    box-shadow: 0 10px 0 0 #B8860B;
+  }
+  
+  .shadow-yellow-heavy:active {
+    box-shadow: 0 4px 0 0 #B8860B;
+    transform: translateY(6px);
+  }
+
+  .buy-box-border {
+    border: 3px solid #FFD700;
+    border-radius: 3rem;
+  }
+}
