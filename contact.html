@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - 4K YT Watch Hours</title>
+    <meta name="description" content="Get in touch with the 4K YT Watch Hours team. We're here to help you reach your monetization goals." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Anton&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Anton', 'sans-serif'],
+            },
+            colors: {
+              gold: {
+                DEFAULT: '#FFD700',
+                dark: '#B8860B',
+                hover: '#FFC400',
+              },
+              yt: '#FF0000'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      @layer base {
+        body {
+          background-color: #000000;
+          color: #F3F4F6;
+        }
+      }
+      .bg-glow-red {
+        background: radial-gradient(circle at center, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+        filter: blur(140px);
+      }
+      .bento-card {
+        background: rgba(15, 15, 15, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+      }
+      .input-field {
+        @apply w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white outline-none focus:border-gold/50 transition-all;
+      }
+      label {
+        @apply block text-xs font-black uppercase tracking-widest text-gray-500 mb-2;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen font-sans selection:bg-gold selection:text-black overflow-x-hidden">
+    
+    <!-- Background Elements -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none -z-10">
+      <div class="absolute top-[10%] right-[-10%] w-[50%] h-[50%] bg-glow-red rounded-full opacity-30"></div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="p-6">
+      <div class="max-w-5xl mx-auto flex items-center justify-between bg-black/40 backdrop-blur-md border border-white/5 p-4 rounded-2xl">
+        <a href="/" class="font-display text-2xl uppercase tracking-tighter text-white">4K <span class="text-gold">YT</span></a>
+        <a href="/" class="text-xs font-black uppercase tracking-widest text-gray-500 hover:text-white transition-colors">Back to Home</a>
+      </div>
+    </nav>
+
+    <main class="pt-20 pb-32">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h1 class="text-5xl md:text-7xl font-display uppercase tracking-tighter text-white mb-4">Get In <span class="text-gold">Touch</span></h1>
+          <p class="text-gray-400 text-lg max-w-xl mx-auto">Have questions about reaching 4,000 watch hours? Our team is here to support your journey.</p>
+        </div>
+
+        <div class="max-w-md mx-auto grid gap-8">
+          <!-- Contact Info -->
+          <div class="space-y-6">
+            <div class="bento-card p-8 rounded-3xl">
+              <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h3 class="text-white font-bold text-xl mb-2">Email Us</h3>
+              <p class="text-gray-500 text-sm mb-4">For support, partnerships, or general inquiries.</p>
+              <a href="mailto:systemedotbio@gmail.com" class="text-gold font-black tracking-tight hover:underline">systemedotbio@gmail.com</a>
+            </div>
+
+            <div class="bento-card p-8 rounded-3xl">
+              <div class="w-12 h-12 bg-yt/10 rounded-2xl flex items-center justify-center text-yt mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </div>
+              <h3 class="text-white font-bold text-xl mb-2">Community</h3>
+              <p class="text-gray-500 text-sm mb-4">Join thousands of creators in our network.</p>
+              <span class="text-white/40 text-xs font-black uppercase tracking-widest">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-20 border-t border-white/5 text-center bg-black">
+      <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-800">
+        © 2026 4K YT Watch Hours. All rights reserved. <span class="mx-2 opacity-20">|</span> <a href="/privacy-policy.html" class="hover:text-gold transition-colors">Privacy Policy</a> <span class="mx-2 opacity-20">|</span> <a href="/contact.html" class="hover:text-gold transition-colors">Contact</a>
+      </p>
+    </footer>
+  </body>
+</html>
