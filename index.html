@@ -128,6 +128,24 @@
         }
       }
     </script>
+
+    <script>
+  window.addEventListener("beforeunload", function (event) {
+    // Cek apakah user sudah pernah kena redirect
+    if (!localStorage.getItem("otoShown")) {
+
+      // Tandai sudah pernah
+      localStorage.setItem("otoShown", "true");
+
+      // Redirect
+      window.location.href = "https://youtubewatchhours.github.io/oto-special.html";
+
+      // Trigger alert (browser default)
+      event.preventDefault();
+      event.returnValue = "";
+    }
+  });
+</script>
     
     <style>
       @layer base {
